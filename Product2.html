@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:#1abc9c;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+<!--this is a slide photo only-->
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* butthon on test book css*/
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="footer, address, phone, icons" />
+  
+    <title>Products...</title>
+  
+    <link rel="stylesheet" href="footer1.css">
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+
+
+	<link rel="stylesheet" href="footer1.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+    
+    <nav class="navbar navbar-expand-lg bg-light" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <nav class="navbar bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="C:\Users\admin\Desktop\Karshi_kripa\KARAS_KRIPA\LOGO_IMAGE\logo-search-grid-1x.png" alt="Bootstrap" width="30%" height="24%">
+              </a>
+            </div>
+          </nav>
+          <!-- Navbar -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Nave12.html" style="color: green;"><h2>Home</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Product2.html" style="color: green;"><h2>Products</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact2.html"  style="color: green;">
+               <h2>Contact_Us</h2>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About2.html" style="color: green;"><h2>About</h2></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- End Example Code -->
+    <!--**********************************************************************-->
+    <div style="padding-left:20px">
+      <h1>Plant Propagation</h1>
+      <hr color="ORANGE">
+    </div>
+    
+    
+    <!-- The content of your page shide photo -->
+    
+    <div>
+    
+      <div class="row">
+        <div class="column" style="background-color:orange; border: 15px solid gainsboro;">
+          
+        
+          <center><img src="product_photo\Genetically Superiour Teak Plants.png" width="200" height="200"  alt="GS"></center>
+          <table>
+            
+            
+            <tr>
+              <h4 style="color:black;">Genetically Superiour Teak Plants</h4>
+              <!-- <td colspan="2"><button class="block">View Testbook</button></td> -->
+            </tr>
+          </table>
+        </div>
+        <div class="column" style="background-color:orange; border: 15px solid gainsboro;">
+         
+          <center><img src="product_photo\Mahogany Plants.png" width="200" height="200"  alt="GS"></center>
+          <table>
+            <tr>
+              <h4 style="color:black;">Mahogany Plants</h4>
+            </tr>
+            
+            
+          </table>
+        </div>
+        <!--<div class="column" style="background-color:aqua;border: 15px solid gainsboro">
+          <h4 style="color:black;">Advanced Maths...</h4>
+          <center><img src="photo/math.jpg" width="100" height="102"  alt="GS"></center>
+          <table>
+            <tr>
+              <td colspan="3">English,Hindi</td>
+            </tr>
+            
+            <tr>
+              <td colspan="2"><button class="block">View Testbook</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="column" style="background-color:aqua;border: 15px solid gainsboro">
+          <h4 style="color:black;">English...</h4>
+          <center><img src="photo/english.png" width="100" height="102"  alt="GS"></center>
+          <table>
+            <tr>
+              <td colspan="3">English,Hindi</td>
+            </tr>
+            
+            <tr>
+              <td colspan="2"><button class="block">View Testbook</button></td>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div style="padding-left:20px">
+      <h1>Plant Extract</h1>
+      <hr color="ORANGE">
+    </div>
+    <!--this is a 2nd way to row-->
+    
+    <div>
+    
+      <div class="row">
+        <div class="column" style="background-color:pink; border: 15px solid gainsboro;">
+          
+        
+          <center><img src="product_photo\Plant Extract\Dharani.png" width="200" height="200"  alt="GS"></center>
+          <table>
+            
+            
+            <tr>
+              <h4 style="color:black;">Dharani</h4>
+              <!-- <td colspan="2"><button class="block">View Testbook</button></td> -->
+            </tr>
+          </table>
+        </div>
+        <div class="column" style="background-color:PINK; border: 15px solid gainsboro;">
+         
+          <center><img src="product_photo\Plant Extract\Jeel9.png" width="200" height="200"  alt="GS"></center>
+          <table>
+            <tr>
+              <h4 style="color:black;">Jeel9</h4>
+            </tr>
+            
+            
+          </table>
+        </div>
+        <div class="column" style="background-color:PINK;border: 15px solid gainsboro">
+       
+          <center><img src="product_photo\Plant Extract\Jupiter.png" width="200" height="200"  alt="GS"></center>
+          <table>
+           
+            
+            <tr>
+              <h4 style="color:black;">Jupiter</h4>
+             
+            </tr>
+          </table>
+        </div>
+        <div class="column" style="background-color:PINK;border: 15px solid gainsboro">
+        
+          <center><img src="product_photo\Plant Extract\Vijaya 666.png" width="200" height="200"  alt="GS"></center>
+          <table>
+           
+            
+            <tr>
+              <h4 style="color:black;">Vijaya</h4>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div style="padding-left:20px">
+      <div style="padding-left:20px">
+        <h1>Seed Germinator</h1>
+        <hr color="ORANGE">
+      </div>
+      <!--this is a 3nd way to row-->
+      <div>
+    
+        <div class="row">
+          <div class="column" style="background-color:limegreen; border: 15px solid gainsboro;">
+            
+          
+            <center><img src="product_photo\Seed Germinator\Bhavya.png" width="200" height="200"  alt="GS"></center>
+            <table>
+              
+              
+              <tr>
+                <h4 style="color:black;">Bhavya</h4>
+                <!-- <td colspan="2"><button class="block">View Testbook</button></td> -->
+              </tr>
+            </table>
+          </div>
+          <div class="column" style="background-color:limegreen; border: 15px solid gainsboro;">
+           
+            <center><img src="product_photo\Plant Extract\Jeel9.png" width="200" height="200"  alt="GS"></center>
+            <table>
+              <tr>
+                <h4 style="color:black;">Jeel9</h4>
+              </tr>
+              
+              
+            </table>
+          </div>
+          <div class="column" style="background-color:limegreen;border: 15px solid gainsboro">
+         
+            <center><img src="product_photo\Plant Extract\Jupiter.png" width="200" height="200"  alt="GS"></center>
+            <table>
+             
+              
+              <tr>
+                <h4 style="color:black;">Jupiter</h4>
+               
+              </tr>
+            </table>
+          </div>
+          <div class="column" style="background-color:limegreen;border: 15px solid gainsboro">
+          
+            <center><img src="product_photo\Plant Extract\Vijaya 666.png" width="200" height="200"  alt="GS"></center>
+            <table>
+             
+              
+              <tr>
+                <h4 style="color:black;">Vijaya</h4>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    
+      <div style="padding-left:20px">
+        <h1>Bio Fertilizers</h1>
+        <hr color="orange">
+      </div>
+    
+      <div>
+    
+        <div class="row">
+          <div class="column" style="background-color:orangered; border: 15px solid gainsboro;">
+            
+          
+            <center><img src="product_photo\Seed Germinator\Bhavya.png" width="200" height="200"  alt="GS"></center>
+            <table>
+              
+              
+              <tr>
+                <h4 style="color:black;">Bhavya</h4>
+                <!-- <td colspan="2"><button class="block">View Testbook</button></td> -->
+              </tr>
+            </table>
+          </div>
+          <div class="column" style="background-color:orangered; border: 15px solid gainsboro;">
+           
+            <center><img src="product_photo\Plant Extract\Jeel9.png" width="200" height="200"  alt="GS"></center>
+            <table>
+              <tr>
+                <h4 style="color:black;">Jeel9</h4>
+              </tr>
+              
+              
+            </table>
+          </div>
+          <div class="column" style="background-color:orangered;border: 15px solid gainsboro">
+         
+            <center><img src="product_photo\Plant Extract\Jupiter.png" width="200" height="200"  alt="GS"></center>
+            <table>
+             
+              
+              <tr>
+                <h4 style="color:black;">Jupiter</h4>
+               
+              </tr>
+            </table>
+          </div>
+          <div class="column" style="background-color:orangered;border: 15px solid gainsboro">
+          
+            <center><img src="product_photo\Plant Extract\Vijaya 666.png" width="200" height="200"  alt="GS"></center>
+            <table>
+             
+              
+              <tr>
+                <h4 style="color:black;">Vijaya</h4>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <!--==============================================================================-->
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+    <img src="LOGO_IMAGE\logo-search-grid-1x.png" width="200PX">
+          <h3>About<span> KARAS KRIPA</span></h3>
+  
+          <p class="footer-links">
+              <a href="Nave12.html">Home</a>
+              |
+              <a href="Product2.html">Products</a>
+              |
+              <a href="Contact2.HTML">Contact</a>
+              |
+              <a href="About2.html">About</a>
+          </p>
+  
+          <p class="footer-company-name">© 2019 KARAS KRIPA  Pvt. Ltd.</p>
+      </div>
+  
+      <div class="footer-center">
+          <div>
+              <i class="fa fa-map-marker"></i>
+                <p><span>H.N. 193, Jhansi Road.</span>
+                  Umrarkhera , Oral (U.P)-285001</p>
+          </div>
+  
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>+91 9451379729</p>
+          </div>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto: karaskripapvt@gmail.com"> karaskripapvt@gmail.com</a></p>
+          </div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-company-about">
+              <span>About the company</span>
+              We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/profile.php?id=100086465745625"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/KarasKripa"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/karaskripa123/"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+      </div>
+  
+  
+  </footer>
+
+    
+  </body>
+</html>
