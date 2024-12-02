@@ -1,0 +1,2 @@
+# KarasKripa
+Static Site
